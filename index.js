@@ -86,7 +86,7 @@ const viewAllDepartments = () => {
 
 const viewAllRoles = () => {
 
-    const query = "SELECT roles.id, roles.title, roles.salary FROM roles;";
+    const query = "SELECT role.id, role.title, role.salary FROM role;";
     db_connection.query(query,
 
         function (err, res) {
@@ -99,7 +99,7 @@ const viewAllRoles = () => {
 
 const viewAllEmployees = () => {
 
-    const query = "";
+    const query = "SELECT employee.id, employee.first_name, employee.last_name, department.name, role.title, role.salary, CONCAT(e.first_name, ' ' ,e.last_name) AS Manager FROM employee INNER JOIN role on role.id = employee.role_id INNER JOIN department on department.id = role.department_id left join employee e on employee.manager_id = e.id;";
     db_connection.query(query,
 
         function (err, res) {
@@ -108,28 +108,29 @@ const viewAllEmployees = () => {
             start();
         });
 
-}
+};
 
 const addAdeparment = () => {
 
     inquirer.prompt([
        {
-           type:"",
-           message:"",
-           name:"",
+           name:"Name",
+           type:"input",
+           message:"What department are you looking to add?",
        } 
-    ])
-
-    const query = "";
-    db_connection.query(query,
-
-        function (err, res) {
-            if (err) throw err
-            console.table(res);
-            start();
-        });
-
-}
+    ]).then(function(res){
+        const query = "INSERT INTO deparment SET ?";
+        db_connection.query(query,
+            {
+                name: res.Name
+            },
+            function (err) {
+                if (err) throw err
+                console.table(res);
+                start();
+            })
+    })
+};
 
 const addArole = () => {
 
