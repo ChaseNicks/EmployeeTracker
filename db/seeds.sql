@@ -8,7 +8,7 @@ VALUES (1, "Board"),
 
 -- Role seeds
 INSERT INTO role (department_id, title, salary)
-VALUES (1, "CEO", 1000000),
+VALUES (1, "CEO", 15000000),
        (2, "Sales Lead", 100000),
        (2, "Salesperson", 80000),
        (3, "Lead Engineer", 150000),
@@ -20,9 +20,9 @@ VALUES (1, "CEO", 1000000),
 
 -- Employee seeds
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Jacob", "Nordan", 1, null),
+VALUES ("Chase", "Nicks", 1, null),
        ("John", "Doe", 2, 1),
-       ("Mike", "Chan", 3, 3),
+       ("Mike", "Chan", 3, NULL),
        ("Ashley", "Rodriguez", 4, 1),
        ("Kevin", "Tupik", 5, 4), 
        ("Anthony", "Singh", 6, 1),
