@@ -86,7 +86,7 @@ const viewAllDepartments = () => {
 
 const viewAllRoles = () => {
 
-    const query = "";
+    const query = "SELECT roles.id, roles.title, roles.salary FROM roles;";
     db_connection.query(query,
 
         function (err, res) {
