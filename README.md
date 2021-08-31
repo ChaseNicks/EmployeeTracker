@@ -31,7 +31,7 @@ A command line application that allows a business owner to view his / hers compa
   1. Clone Repo
   2. Install Node.js
   3. Enter "npm i" into terminal for node_modules
-  4. Enter "npm index.js"
+  4. Enter "node index.js"
 
 # Screenshots
 
