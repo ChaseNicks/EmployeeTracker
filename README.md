@@ -46,7 +46,7 @@ A command line application that allows a business owner to view his / hers compa
 
 # Demo
 
-![Demo](./img/vid-demo.mp4)
+https://user-images.githubusercontent.com/81818805/131589546-245a1f6e-7226-40b6-b6fa-08e4e805277b.mp4
 
 # License
 
