@@ -11,6 +11,9 @@
   🔎 [Screenshots](https://github.com/ChaseNicks/EmployeeTracker#Screenshots)
 
 
+  🔎 [Demo](https://github.com/ChaseNicks/EmployeeTracker#Demo)
+
+
   🔎 [License](https://github.com/ChaseNicks/EmployeeTracker#License)
 
 
@@ -40,6 +43,10 @@ A command line application that allows a business owner to view his / hers compa
 
 ![Example1](./img/ex1.png)
 ![Example2](./img/ex2.png)
+
+# Demo
+
+![Demo](./img/vid-demo.mp4)
 
 # License
 
